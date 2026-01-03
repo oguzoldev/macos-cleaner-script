@@ -60,7 +60,7 @@ rm -rf ~/Library/Caches/Homebrew/downloads 2>/dev/null
 rm -rf ~/Library/Logs/* 2>/dev/null
 
 # QuickLook cache
-qlmanage -r cache 2>/dev/null
+qlmanage -r cache >/dev/null 2>&1
 
 # Xcode files
 echo "[5/6] Cleaning developer tools (Xcode, VS Code, npm...)"
