@@ -24,9 +24,13 @@ A comprehensive system cleaning script for macOS. Safely removes unnecessary cac
 
 ### Quick Install (Recommended)
 
+Run directly from your terminal without cloning:
+
 ```bash
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/oguzoldev/macos-cleaner-script/main/script.sh)"
 ```
+
+This command downloads and executes the script directly from GitHub.
 
 ### Manual Installation
 

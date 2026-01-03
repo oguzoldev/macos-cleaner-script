@@ -24,9 +24,13 @@ macOS için kapsamlı sistem temizleme scripti. Disk alanı kazanmak için gerek
 
 ### Hızlı Kurulum (Önerilen)
 
+Klonlamadan terminalinizden direkt çalıştırın:
+
 ```bash
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/oguzoldev/macos-cleaner-script/main/script_tr.sh)"
 ```
+
+Bu komut scripti GitHub'dan direkt indirip çalıştırır.
 
 ### Manuel Kurulum
 

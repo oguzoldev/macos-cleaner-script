@@ -59,11 +59,22 @@ rm -rf ~/Library/Caches/com.apple.dt.XCode 2>/dev/null
 rm -rf ~/Library/Caches/Homebrew/downloads 2>/dev/null
 rm -rf ~/Library/Logs/* 2>/dev/null
 
+# QuickLook önbelleği
+qlmanage -r cache 2>/dev/null
+
 # Xcode dosyaları
-echo "[5/6] Xcode dosyaları temizleniyor..."
+echo "[5/6] Geliştirici araçları temizleniyor (Xcode, VS Code, npm...)"
 rm -rf ~/Library/Developer/Xcode/Archives
 rm -rf ~/Library/Developer/Xcode/DerivedData
 rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport
+
+# VS Code Cache
+rm -rf "$USER_HOME/Library/Application Support/Code/Cache" 2>/dev/null
+rm -rf "$USER_HOME/Library/Application Support/Code/CachedData" 2>/dev/null
+
+# NPM & Yarn Cache
+rm -rf "$USER_HOME/.npm/*" 2>/dev/null
+rm -rf "$USER_HOME/Library/Caches/Yarn" 2>/dev/null
 
 # Uygulama cache'leri ve diğer dosyalar
 echo "[6/6] Uygulama cache'leri ve diğer dosyalar temizleniyor..."
@@ -73,6 +84,18 @@ rm -rf "$USER_HOME/Library/Application Support/SoundCloud/Cache" 2>/dev/null
 rm -rf "$USER_HOME/Library/Application Support/discord/Cache" 2>/dev/null
 rm -rf "$USER_HOME/Library/pnpm" 2>/dev/null
 rm -rf "$USER_HOME/Library/Metadata/CoreSpotlight" 2>/dev/null
+
+# Spotify
+rm -rf "$USER_HOME/Library/Application Support/Spotify/PersistentCache" 2>/dev/null
+rm -rf "$USER_HOME/Library/Caches/com.spotify.client" 2>/dev/null
+
+# Slack
+rm -rf "$USER_HOME/Library/Application Support/Slack/Service Worker/CacheStorage" 2>/dev/null
+rm -rf "$USER_HOME/Library/Application Support/Slack/Cache" 2>/dev/null
+rm -rf "$USER_HOME/Library/Caches/com.tinyspeck.slackmacgap" 2>/dev/null
+
+# Çöp Kutusu
+rm -rf ~/.Trash/* 2>/dev/null
 
 echo "======================================"
 echo "Temizleme tamamlandı!"
