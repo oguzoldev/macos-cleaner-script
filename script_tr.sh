@@ -84,6 +84,8 @@ rm -rf "$USER_HOME/Library/Application Support/SoundCloud/Cache" 2>/dev/null
 rm -rf "$USER_HOME/Library/Application Support/discord/Cache" 2>/dev/null
 rm -rf "$USER_HOME/Library/pnpm" 2>/dev/null
 rm -rf "$USER_HOME/Library/Metadata/CoreSpotlight" 2>/dev/null
+rm -rf "$USER_HOME/Library/Saved Application State/*" 2>/dev/null
+
 
 # Spotify
 rm -rf "$USER_HOME/Library/Application Support/Spotify/PersistentCache" 2>/dev/null
